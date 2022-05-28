@@ -1,0 +1,22 @@
+plugins {
+    id "io.freefair.lombok" version "6.4.3"
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+dependencies {
+implementation 'org.projectlombok:lombok:1.18.22'
+}
